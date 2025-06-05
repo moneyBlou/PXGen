@@ -1,4 +1,4 @@
-Pixel Art Generator — это настольная программа, которая позволяет 
+# Pixel Art Generator — это настольная программа, которая позволяет 
 превратить любое изображение в пиксель-арт с заданным количеством 
 цветов, автоматически создать цветовую палитру, а также сгенерировать 
 чёрно-белую раскраску с подписями цветов по пикселям.
@@ -57,7 +57,7 @@ def generate_pixel_art(self, grid_size, n_colors=16):
  clustered_colors = np.array(kmeans.cluster_centers_, dtype=np.uint8)
  clustered_img = clustered_colors[kmeans.predict(pixels)].reshape((grid_size[1],
 grid_size[0], 3))
- # Дальнейшая визуализация и сохранение
+Дальнейшая визуализация и сохранение
 
 9. Описание структуры проекта
 - main.py: основной исполняемый файл с интерфейсом.
